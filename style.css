@@ -24,8 +24,9 @@ p {
 
 .body-container {
     width: 800px;
-    height: 450px;
+    height: 500px;
     padding: 10px;
+    padding-top: 0px;
     margin-top: 5px;
     display: flex;
     flex-direction: column;
@@ -86,4 +87,8 @@ h2 {
     color: #f7f6df;
     font-family: Verdana, sans-serif;
     padding: 20px;
+}
+
+::selection {
+    background: #f5d133;
 }

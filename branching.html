@@ -6,11 +6,56 @@
   <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
   <title>Branching</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .inputdiv {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 30px
+    }
+    input {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 0px;
+        padding: 10px;
+        width: 250px;
+        font-size: 20px;
+        box-shadow: inset;
+        border-radius: 5px;
+        border: 2px solid gray;
+    }
+
+    input::placeholder {
+        font-family: Verdana, sans-serif;
+    }
+
+    input:hover{
+        border-color: black;
+        transition-duration: 0.3s;
+        transition: width is ease-out;
+    }
+
+    input:focus{
+        border-color: black;
+    }
+  </style>
     <body>
     <div class="container">
         <h1>branching</h1>
         <div class="body-container">
-            <p>test</p>
+            <p>We make <strong>logical choices</strong> every day. This tree represents a statement which might be <strong>true</strong> or <strong>false</strong>. If it is hot outside, what will you wear? What about if it is not hot outside?</p>
+            <div style="width: 100%; display: inline-block; text-align: center">
+                <img src="assets/truefalsestatement.png" width="300px" height="210px">
+                <div class="inputdiv">
+                    <div style="text-align: left; width: 50%">
+                    <input type="text" placeholder="I will wear...">
+                    </div>
+                    <div style="text-align: right; width: 50%">
+                    <input type="text" placeholder="I will wear...">
+                    </div>
+                </div>
+            </div>
+            <p>Computers also make decisions! They decide which code to execute based on values stored in memory. These <strong>logical trees</strong> can grow many more complicated layers as the computer decides which paths to take.</p>
         </div>
         <div class="next-button" onclick="window.location.href='computationalthinking.html'">
             <div class="button-text">< back to computational thinking</div>
