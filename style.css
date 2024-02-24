@@ -62,8 +62,8 @@ h1 {
 }
 
 .image {
-    width: 224px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
 }
 

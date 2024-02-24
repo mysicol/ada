@@ -6,11 +6,52 @@
   <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
   <title>Analytical Engine</title>
   <link rel="stylesheet" href="style.css">
+    <style>
+        .image-container {
+            align-items: center;
+            margin: 30px;
+            margin-left: 120px;         
+            width: 540px;
+            display: flex;
+            flex-direction: row;
+            border: solid 5px;
+            border-color: #38aaae;
+            border-radius: 5px;
+          }
+        .image-wrapper {
+            position: relative;
+            bottom: 0;
+            display: inline-block;
+            vertical-align: top;
+            border: none;
+        }
+        .analyticalEngineImage {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            border: none;
+            vertical-align: top;
+        }
+        .analyticalEngineImage:hover {
+            cursor: pointer;
+        }
+    </style>
     <body>
     <div class="container">
         <h1>the analytical engine</h1>
-        <div class="body-container">
-            <p>test</p>
+        <div>
+            <div class="body-container">
+                <p>Something about analytical engine</p>
+                <div class="image-container">
+                    <div class="image-wrapper" style="right: 0;">
+                        <img class="analyticalEngineImage" src="./assets/TheStore.png" alt="The Store" width="300" height="310" onclick="window.location.href='store.html'" onmouseover="this.src = './assets/TheStoreCircled.png';" onmouseout="this.src = './assets/TheStore.png'">
+                    </div>
+                    <div class="image-wrapper" style="left: 0;">
+                        <img class="analyticalEngineImage" src="./assets/TheMill.png" alt="The Mill" width="240" height="150" onclick="window.location.href='mill.html'" onmouseover="this.src = './assets/TheMillCircled.png';" onmouseout="this.src = './assets/TheMill.png'">
+                        <img class="analyticalEngineImage" src="./assets/PunchCard_Printer.png" alt="Punch Card Printer" width="240" height="160" onclick="window.location.href='io.html'" onmouseover="this.src = './assets/PunchCard_PrinterCircled.png';" onmouseout="this.src = './assets/PunchCard_Printer.png'">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="next-button" onclick="window.location.href='computationalthinking.html'">
             <div class="button-text">computational thinking ></div>
