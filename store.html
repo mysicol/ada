@@ -10,11 +10,28 @@
     <div class="container">
         <h1>the store</h1>
         <div class="body-container">
-            <p></p>
+            <p>Known as the Store by Babbage, this part of the engine served as a <b>source of memory</b> where <b>data was held prior to processing</b>. The Mill had the capacity to <b>store over 1,000 numbers with up to 50 digits</b>.<br><br>Take a guess! What is the Store in a modern computer?.</p>
+            <div class="reveal">
+                <div class="image-container">
+                    <img src="./assets/hideBox.png" alt="Solid Box" width="540" height="460">
+                </div>
+            </div>
         </div>
         <div class="next-button" onclick="window.location.href='analyticalengine.html'">
             <div class="button-text">< back to analytical engine</div>
         </div>
     </div>
+
+    <script>
+        $("#imageMachine").hide();
+        $("#reveal").show();
+
+        $(document).ready(function(){
+            $("#reveal").click(function(){
+                $("#reveal").hide();
+                $('#imageMachine').show();
+            });
+        });
+    </script> 
 </body>
 </html>
