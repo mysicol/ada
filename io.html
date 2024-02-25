@@ -9,12 +9,22 @@
   <style>
     img {
         border: solid 5px;
-            border-color: #38aaae;
-            border-radius: 5px;
+        border-color: #38aaae;
+        border-radius: 5px;
+        margin-top: 20px;
     }
     .image-container {
         width: 100%;
         text-align: center;
+    }
+    .shower {
+        cursor: pointer;
+    }
+    .shower:hover {
+        color: #38aaae;
+        transition: ease-out;
+        transition-duration: 0.2s;
+        text-decoration: underline;
     }
   </style>
     <body>
@@ -22,11 +32,11 @@
         <h1>punch cards and printer</h1>
         <div class="body-container">
             <p>Data could be inputted into the engine by <b>setting necessary figure columns to their appropriate values</b> before computation began or by <b>feeding numerical data via Number Cards</b>. To then return outputs, the machine used a <b>printer, graph plotter, and a bell</b>. It was also able to <b>punch numbers onto cards</b> to be read later.<br><br>Can you guess some modern input and output units?</p>
-            <p onclick="show()"><b>Click here to show:</b></p>
+            <p class="shower" onclick="show()"><b>Click here to show:</b></p>
             <div id="imageMachine" style="visibility: hidden">
                 <div class="image-container">
                     <img src="./assets/modernIO.png" alt="Solid Box" width="730" height="220">
-                    <p>Keyboard, Search Bar, Phone Screen, Headphone</p>
+                    <p style="text-align: center">Keyboard, Search Bar, Phone Screen, Headphone</p>
                 </div>
             </div>
         </div>

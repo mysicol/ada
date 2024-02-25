@@ -9,12 +9,22 @@
   <style>
     img {
         border: solid 5px;
-            border-color: #38aaae;
-            border-radius: 5px;
+        border-color: #38aaae;
+        border-radius: 5px;
+        margin-top: 20px;
     }
     .image-container {
         width: 100%;
         text-align: center;
+    }
+    .shower {
+        cursor: pointer;
+    }
+    .shower:hover {
+        color: #38aaae;
+        transition: ease-out;
+        transition-duration: 0.2s;
+        text-decoration: underline;
     }
   </style>
     <body>
@@ -22,11 +32,11 @@
         <h1>the mill</h1>
         <div class="body-container">
             <p>The Mill would have been <b>fifteen feet tall</b>. This is where the <b>calculations happen</b>. The Mill would do this by using a series of barrels, gears, and columns to <b>pull numbers from the memory</b> and <b>store them in registers</b>, smaller units of memory.<br><br>What do you think is like the Mill in a modern computer?</p>
-            <p onclick="show()"><b>Click here to show:</b></p>
+            <p class="shower" onclick="show()"><b>Click here to show:</b></p>
             <div id="imageMachine" style="visibility: hidden">
                 <div class="image-container">
-                    <img src="./assets/CPU.png" alt="Solid Box" width="800" height="230">
-                    <p>CPU (Central Processing Unit)</p>
+                    <img src="./assets/CPU.png" alt="Solid Box" width="600" height="230">
+                    <p style="text-align: center">CPU (Central Processing Unit)</p>
                 </div>
             </div>
         </div>
