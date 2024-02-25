@@ -10,12 +10,23 @@
     <div class="container">
         <h1>the mill</h1>
         <div class="body-container">
-            <p>The Mill, now known as the <b>central processing unit (CPU)</b> would have been <b>fifteen feet tall</b>. This is where the <b>calculations happen</b>. The Mill would do this by using a series of barrels, gears, and columns to <b>pull numbers from the memory</b> and <b>store them in registers</b>, smaller units of memory.</p>
-            
+            <p>The Mill would have been <b>fifteen feet tall</b>. This is where the <b>calculations happen</b>. The Mill would do this by using a series of barrels, gears, and columns to <b>pull numbers from the memory</b> and <b>store them in registers</b>, smaller units of memory.<br><br>What do you think the modern Mill is?</p>
+            <p onclick="show()">Click here to show</p>
+            <div id="imageMachine" style="visibility: hidden">
+                <div class="image-container">
+                    <img src="./assets/CPU.png" alt="Solid Box" width="800" height="230">
+                    <p>CPU (Central Processing Unit)</p>
+                </div>
+            </div>
         </div>
         <div class="next-button" onclick="window.location.href='analyticalengine.html'">
             <div class="button-text">< back to analytical engine</div>
         </div>
     </div>
+    <script>
+        function show() {
+                document.getElementById("imageMachine").style.visibility = "visible";
+        }
+    </script> 
 </body>
 </html>

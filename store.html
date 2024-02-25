@@ -11,9 +11,11 @@
         <h1>the store</h1>
         <div class="body-container">
             <p>Known as the Store by Babbage, this part of the engine served as a <b>source of memory</b> where <b>data was held prior to processing</b>. The Mill had the capacity to <b>store over 1,000 numbers with up to 50 digits</b>.<br><br>Take a guess! What is the Store in a modern computer?.</p>
-            <div class="reveal">
+            <p onclick="show()">Click here to show</p>
+            <div id="imageMachine" style="visibility: hidden">
                 <div class="image-container">
-                    <img src="./assets/hideBox.png" alt="Solid Box" width="540" height="460">
+                    <img src="./assets/RAM.png" alt="Solid Box" width="800" height="270">
+                    <p>RAM (Random Access Memory)</p>
                 </div>
             </div>
         </div>
@@ -23,15 +25,9 @@
     </div>
 
     <script>
-        $("#imageMachine").hide();
-        $("#reveal").show();
-
-        $(document).ready(function(){
-            $("#reveal").click(function(){
-                $("#reveal").hide();
-                $('#imageMachine').show();
-            });
-        });
+        function show() {
+                document.getElementById("imageMachine").style.visibility = "visible";
+        }
     </script> 
 </body>
 </html>
