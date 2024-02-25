@@ -10,12 +10,23 @@
     <div class="container">
         <h1>punch cards and printer</h1>
         <div class="body-container">
-            <p>Data could be inputted into the engine by <b>setting necessary figure columns to their appropriate values</b> before computation began or by <b>feeding numerical data via Number Cards</b>. To then return outputs, the machine used a <b>printer, graph plotter, and a bell</b>. It was also able to <b>punch numbers onto cards</b> to be read later.</p>
-            
+            <p>Data could be inputted into the engine by <b>setting necessary figure columns to their appropriate values</b> before computation began or by <b>feeding numerical data via Number Cards</b>. To then return outputs, the machine used a <b>printer, graph plotter, and a bell</b>. It was also able to <b>punch numbers onto cards</b> to be read later.<br><br>Can you guess some modern input and output units?</p>
+            <p onclick="show()">Click here to show</p>
+            <div id="imageMachine" style="visibility: hidden">
+                <div class="image-container">
+                    <img src="./assets/modernIO.png" alt="Solid Box" width="800" height="220">
+                    <p>Keyboard, Search Bar, Phone Screen, Headphone</p>
+                </div>
+            </div>
         </div>
         <div class="next-button" onclick="window.location.href='analyticalengine.html'">
             <div class="button-text">< back to analytical engine</div>
         </div>
     </div>
+    <script>
+        function show() {
+                document.getElementById("imageMachine").style.visibility = "visible";
+        }
+    </script> 
 </body>
 </html>
