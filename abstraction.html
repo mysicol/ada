@@ -20,15 +20,36 @@
     <div class="container">
         <h1>abstraction</h1>
         <div class="body-container">
-            <div style="width: 100%; display: inline-block; text-align: center"><img src="assets/average46.png" width="267px" height="200px"></div>
+            <div style="width: 100%; display: inline-block; text-align: center"><img id="average" src="assets/average46.png" width="267px" height="200px" onclick="changeImage()"></div>
             <p>This is a calculation we could use to find the <strong>average</strong> of 4 and 6. But what if we want to perform this calculation for <strong>any number</strong>?</p>
-            <p>Great! Now, we can compute the average of any numbers we give this function! But what if we want to average things that are <strong>not numbers</strong>?</p>
-            <p>Think about it: How would you decide to compute the average of two <strong>words</strong>? Or two <strong>groups of numbers</strong>? Being able to use the <strong>same</strong> calculation in <strong>different</strong> ways is an important concept in Computer Science called <strong>abstraction</strong>.</p>
-            <p><i>(Click on the image to advance the module)</i></p>
+            <p id="anynumbers" style="visibility:hidden">Great! Now, we can compute the average of any numbers we give this function! But what if we want to average things that are <strong>not numbers</strong>?</p>
+            <p id="otherthings" style="visibility:hidden">Think about it: How would you decide to compute the average of two <strong>words</strong>? Or two <strong>groups of numbers</strong>? Being able to use the <strong>same</strong> calculation in <strong>different</strong> ways is an important concept in Computer Science called <strong>abstraction</strong>.</p>
+            <p id="betaMsg"><i>(Click on the image to advance the module)</i></p>
         </div>
         <div class="next-button" onclick="window.location.href='computationalthinking.html'">
             <div class="button-text">< back to computational thinking</div>
         </div>
     </div>
 </body>
+<script>
+    var numClick = 0;
+
+    function changeImage() {
+        var imageElement = document.getElementById('average');
+        var anyNumbers = document.getElementById('anynumbers');
+        var otherThings = document.getElementById('otherthings');
+        var betaMsg = document.getElementById('betaMsg');
+
+        if (numClick == 0) {
+            numClick += 1;
+            imageElement.src = 'assets/averagexy.png';
+            anyNumbers.style.visibility = 'visible';
+        } else {
+            imageElement.src = 'assets/averageAB.png';            
+            otherThings.style.visibility = 'visible';
+            betaMsg.innerHTML = "<i>(Section completed.)</i>";
+        }
+      }
+
+</script>
 </html>
